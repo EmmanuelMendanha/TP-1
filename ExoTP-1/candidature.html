@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Candidature</title>
+</head>
+
+<body>
+    <header>
+        <div class="drapeau">
+            <div class="vert"></div>
+            <div class="blanc"></div>
+            <div class="rouge"></div>
+        </div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="formation.html">Nos formations</a>
+            <a href="candidature.html">Candidature</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <form method="post">
+            <label>Genre</label>
+            <select>
+                <option value="" disabled selected>Selectionner le genre</option>
+                <option value="homme">Homme</option>
+                <option value="femme">Femme</option>
+            </select>
+            <label>Nom</label>
+            <input type="text" name="name" placeholder="Votre nom">
+            <label>Prénom</label>
+            <input type="text" name="prenom" placeholder="Votre prenom">
+            <label>Date de naissance</label>
+            <input type="date" name="dateNaissance">
+            <label>Lieu de naissance</label>
+            <select>
+                <option value="" disabled selected>Selectionner le lieu de naissance</option>
+                <option value="ville">Pontoise</option>
+                <option value="ville">Cergy</option>
+                <option value="ville">Paris</option>
+                <option value="ville">Lyon</option>
+            </select>
+            <label>Numéro de téléphone</label>
+            <input type="tel" name="tel" placeholder="votre n° de téléphone">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Votre mail">
+            <label>Mot de passe</label>
+            <input type="password" name="pass" placeholder="Votre mot de passe">
+            <label>Description</label>
+            <textarea name="description"></textarea>
+            <label>CV</label>
+            <input type="file" name="cv">
+            <button class="valider">Valider</button>
+            <div class="logo">
+                <img src="images/html.jpg" alt="logo html">
+                <img src="images/css.png" alt="logo css">
+                <img src="images/js.jpg" alt="logo js">
+                <img src="images/php.jpg" alt="logo php">
+                <img src="images/mysql.jpg" alt="logo mysql">
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
